@@ -3,13 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gif Background</title>
+    <title>DagSketch</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./scripts.js" defer></script>
+    
 </head>
 <body>
-        <header>
+    <header>
         <div class="logo"><a href="#homeSection">DAGSKETCH</a></div>
-        <div class="hamburguerBtn">///</div>
+        <div id="hamburguerBtn">///</div>
+
+        <nav class="navbar active">
+            <ul>
+                <li><a href="#homeSection">Home</a></li>
+                <li><a href="#gallerySection">Gallery</a></li>
+                <li><a href="#aboutSection">About</a></li>
+                <li><a href="#contactSection">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section id="homeSection">
@@ -28,28 +40,54 @@
         <div class="galleryItem">
             <img class="galleryItemImage" src="./Cigarrete&Wine.jpeg" alt="">
             <h3 class="galleryItemTitle">Cigarrete & Wine</h3>
+            <div class="galleryItemShadow"></div>
         </div>
 
         <div class="galleryItem">
             <img class="galleryItemImage" src="./friendlyGuy.jpeg" alt="">
-            <h3 class="galleryItemTitle">Friedly Guy</h3>
+            <h3 class="galleryItemTitle">Friendly Guy</h3>
+            <div class="galleryItemShadow"></div>
         </div>
 
         <div class="galleryItem">
             <img class="galleryItemImage" src="./MaskedGirl.jpeg" alt="">
             <h3 class="galleryItemTitle">Masked Girl</h3>
+            <div class="galleryItemShadow"></div>
         </div>
 
         <div class="galleryItem">
             <img class="galleryItemImage" src="./Selfportrair.jpeg" alt="">
             <h3 class="galleryItemTitle">Self Portrait</h3>
+            <div class="galleryItemShadow"></div>
         </div>
 
         
     </section>
 
-    <section id="AboutSection">
+    <section id="aboutSection">
         <h2>About the Artist</h2>
     </section>
+
+    <section id="contactSection">
+        <h2>Contact</h2>
+
+        <div class="contactWrapper">
+            <a class="instagramLink">
+                <i class="fa-brands fa-instagram"></i>
+                 DagSketch
+            </a>
+
+            <a class="emailLink">
+                <i class="fa-solid fa-envelope"></i>
+                 dagsketch@gmail.com
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Porto Alegre, Brasil</p>
+        <p class="footerBottom">© 2024 DagSketch. All Rights Reserved.</p>
+        
+    </footer>
 </body>
 </html>
